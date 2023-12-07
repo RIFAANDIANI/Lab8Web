@@ -30,10 +30,13 @@ Backup dan Recovery
 ## 1. Mysql Server
 Untuk menjalankan MySQL Server dari menu XAMPP Contol
 http://localhost/phpmyadmin/
+![gambar 1](https://github.com/RIFAANDIANI/Lab8Web/assets/115616294/c421e068-28f1-42ab-bba6-f9e51aa1d36c)
 ## 2. Mengakses MySQL Client menggunakan PHP MyAdmin
 Pastikan webserver Apache dan MySQL server sudah dijalankan. Kemudian buka melalui browser: http://localhost/phpmyadmin/
+![image](https://github.com/RIFAANDIANI/Lab8Web/assets/115616294/f22338b0-7588-4a2c-a9a4-8489969089ea)
 ## 3. Membuat Database: Studi Kasus Data Barang
 CREATE DATABASE latihan-1;
+
 ## 4. Membuat Tabel
 
 ```mysql
@@ -54,11 +57,15 @@ VALUES ('Elektronik', 'HP Samsung Android', 'hp_samsung.jpg', 2000000, 2400000, 
 ('Elektronik', 'HP Xiaomi Android', 'hp_xiaomi.jpg', 1000000, 1400000, 5),
 ('Elektronik', 'HP OPPO Android', 'hp_oppo.jpg', 1800000, 2300000, 5);
 ```
+## output
+![gambar 3](https://github.com/RIFAANDIANI/Lab8Web/assets/115616294/a8942cf3-a2f7-414b-a1b9-e9ab1b80d321)
 
 ## 6. Membuat Program CRUD
 Buat folder lab8_php_database pada root directory web server, Kemudian untuk mengakses direktory tersebut pada web server dengan mengakses URL: http://localhost/lab8_php_database/
 
 Output
+![gambar 5](https://github.com/RIFAANDIANI/Lab8Web/assets/115616294/85c17eba-87e3-4629-a3fb-ec2c4202c407)
+
 ## 7. Membuat file koneksi database
 Buat file baru dengan nama koneksi.php
 ```php
@@ -76,7 +83,7 @@ if ($conn == false)
 ?>
 ```
 Output
-
+![gambar 4](https://github.com/RIFAANDIANI/Lab8Web/assets/115616294/53202c0d-accb-42fb-8638-42381abbf301)
 
 ## 8. Membuat file index untuk menampilkan data (Read)
 Buat file baru dengan nama index.php
@@ -142,6 +149,7 @@ $result = mysqli_query($conn, $sql);
 </html>
 ```
 Output
+![image](https://github.com/RIFAANDIANI/Lab8Web/assets/115616294/3b841055-7d23-44b7-b1a9-8b6f29e110d0)
 
 ## 9. Menambah Data (Create)
 Buat file baru dengan nama tambah.php
@@ -228,6 +236,9 @@ if (isset($_POST['submit']))
 </html>
 ```
 Output
+![tambah](https://github.com/RIFAANDIANI/Lab8Web/assets/115616294/8dfaf304-7696-40c5-876a-5ed64a7aa8d8)
+## SETELAH DITAMBAH 
+![setelah ditambah](https://github.com/RIFAANDIANI/Lab8Web/assets/115616294/1176efd3-3265-4c4f-b538-51d8118cd65c)
 
 ## 10. Mengubah Data (Update)
 Buat file baru dengan nama ubah.php
@@ -335,6 +346,10 @@ function is_select($var, $val) {
 </html>
 ```
 Output
+![ubah barang](https://github.com/RIFAANDIANI/Lab8Web/assets/115616294/2eb0ebe7-3506-4fe0-8a4a-eccef430baaa)
+## HASIL UBAH BARANG
+![hasil ubah barang](https://github.com/RIFAANDIANI/Lab8Web/assets/115616294/75237383-278c-4141-8f72-0a1a6be59a3b)
+
 
 ## 11.Menghapus Data (Delete)
 Buat file baru dengan nama hapus.php
@@ -348,5 +363,6 @@ header('location: index.php');
 ?>
 ```
 Output
+![hapus barang](https://github.com/RIFAANDIANI/Lab8Web/assets/115616294/be74a800-e654-4296-b245-7aeb6aff3d85)
 
 # FINISH
